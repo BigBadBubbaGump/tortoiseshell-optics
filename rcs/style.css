@@ -1,11 +1,11 @@
 html {
   font-size: 18px;
-
 }
+
 body {
   font-family: helvetica, sans-serif;
-
 }
+
 p {
   font-size: 1rem;
 }
@@ -13,13 +13,11 @@ p {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-
 }
 
 h2 {
   font-size: 1rem;
   }
-
 
 .main-container-top {
   display: block;
@@ -30,7 +28,10 @@ h2 {
   overflow: hidden;
 }
 
-
+.nav-bar-640px {
+  visibility: hidden;
+  position: absolute;
+}
 
 .nav-bar-960px {
   display: flex;
@@ -41,7 +42,6 @@ h2 {
   align-items: center;
   margin: auto;
   margin-top: 1rem;
-
 }
 
 .logo-container {
@@ -81,7 +81,6 @@ h2 {
   margin: 1rem;
 }
 
-
 .main-headline-block {
   margin: auto;
   display: flex;
@@ -111,7 +110,6 @@ h2 {
   align-items: baseline;
   width:24rem;
   margin-top: 3rem;
-
   }
 
   .icon-container {
@@ -119,7 +117,6 @@ h2 {
     width:8rem;
     height:8rem;
     text-align: center;
-
   }
 
 .paper img{
@@ -133,7 +130,6 @@ h2 {
   width:5rem;
   height:auto;
   padding-bottom: 1.4rem;
-
 }
 
 .truck,
@@ -165,15 +161,11 @@ h2 {
 
 .philosophy-block p {
   width:100%;
-
-
 }
 .philosophy-block {
   display:inline-block;
   position: relative;
   width:35%;
-
-
 }
 
 .apointments-block {
@@ -197,8 +189,6 @@ h2 {
   width:100%;
 }
 
-
-
 .copyright-block {
   display:flex;
   align-items: center;
@@ -221,7 +211,7 @@ h2 {
   padding-right: 1rem;
 }
 
-@media only screen and (max-width:1024px) and (min-width:640px) {
+@media only screen and (max-width:1024px) and (min-width:720px) {
 
 h1 {
   font-size: 1.33rem;
@@ -229,14 +219,11 @@ h1 {
   display: inline-block;
   background-color: white;
   padding: .75rem 4rem .75rem 4rem;
-
 }
 
 h2 {
   font-size: 1rem;
-
   }
-
 
   .main-container-top {
     display: block;
@@ -247,8 +234,6 @@ h2 {
     overflow: hidden;
   }
 
-
-
   .nav-bar-960px {
     display: flex;
     width:100%;
@@ -257,7 +242,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-
   }
 
   .logo-container {
@@ -271,15 +255,14 @@ h2 {
     width:auto;
     padding-left: 2rem;
     padding-right: 1rem;
-
   }
 
   .logo-container h2 {
     color: white;
     display:inline-block;
     position: relative;
-
   }
+
   .menu a {
     font-size: 1rem;
     color: white;
@@ -289,14 +272,12 @@ h2 {
   .menu ul {
     list-style: none;
     padding-right: 1rem;
-
   }
 
   .menu li {
     display: inline-block;
     margin: 1rem;
   }
-
 
   .main-headline-block {
     margin: auto;
@@ -308,6 +289,201 @@ h2 {
     top:5rem;
     right:2rem;
     }
-
-
 }
+
+@media only screen and (max-width:720px) {
+
+  p {
+    font-size: .77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    display: inline-block;
+    background-color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: .77rem;
+    }
+
+    .main-container-top {
+      display: block;
+      width:100%;
+      height:17rem;
+      background-image:url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .nav-bar-960px {
+      visibility: hidden;
+      position: absolute;
+          }
+
+    .nav-bar-640px {
+      visibility: visible;
+      position: relative;
+      display: flex;
+      width:100%;
+      height:3rem;
+      background-color: cadetblue;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+
+    .nav-bar-640px img {
+      display: inline-block;
+      height: 1.5rem;
+      width:auto;
+      padding-left: 2rem;
+      padding-right: 1rem;
+    }
+
+    .nav-bar-640px h2 {
+      color: white;
+      display:inline-block;
+      position: relative;
+      padding-right: 2rem;
+    }
+
+    a {
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+
+
+    .main-headline-block {
+      margin: auto;
+      display: flex;
+      position: relative;
+      width:100%;
+      align-items: center;
+      justify-content: center;
+      top:9rem;
+      }
+
+      .icon-group-container {
+        display:flex;
+        flex-direction: column;
+        margin-top: 3.77rem;
+        margin-bottom: 3.77rem;
+        align-items: center;
+      }
+      .icon-container {
+        display:inline-block;
+        width:8rem;
+        height:8rem;
+        text-align: center;
+        margin-top: 1.54rem;
+              }
+
+      .paper img{
+      width:3.5rem;
+      height:auto;
+      padding-bottom: .5rem;
+      }
+
+      .truck img,
+      .ruler img{
+      width:5rem;
+      height:auto;
+      padding-bottom: 1.4rem;
+      }
+
+      .truck,
+      .ruler h2 {
+      width: 5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      }
+
+      .lower-container-960px {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        width:100%;
+      }
+
+      .philosophy-block h2 {
+        display:block;
+        width: 100%;
+        padding: .5rem 0 .5rem 1.25rem;
+        background-color: cadetblue;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color:white;
+        text-align: center;
+      }
+
+      .philosophy-block p {
+        display:block;
+        width:100%;
+        text-align: justify;
+        padding:.5rem;
+
+      }
+
+      .apointments-block p {
+        display:block;
+        width:100%;
+        text-align: justify;
+        padding:.5rem;
+      }
+
+      .philosophy-block {
+        display:block;
+        position: relative;
+        width:90%;
+      }
+
+      .apointments-block {
+        display:block;
+        position: relative;
+        width:90%;
+      }
+
+      .apointments-block h2 {
+        display:block;
+        width: 100%;
+        background-color: cadetblue;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+        color:white;
+        text-align: center;
+
+      }
+
+      .copyright-block {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:9.5rem;
+        margin: auto;
+        margin-top: 5rem;
+        background-color: azure;
+      }
+
+      .copyright-block p {
+        visibility: hidden;
+        position: absolute;
+
+      }
+
+      .copyright-block img {
+        display: inline-block;
+        height:1.5rem;
+        padding-left: 4rem;
+        padding-right: 1rem;
+      }
+
+
+  }
